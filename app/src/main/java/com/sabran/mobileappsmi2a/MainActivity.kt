@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnPassingData : Button
     private lateinit var btnListView : Button
     private lateinit var btnRecycleView : Button
+    private lateinit var btnRecycleBuah : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         btnPassingData = findViewById(R.id.btnPassingData)
         btnListView = findViewById(R.id.btnListView)
         btnRecycleView = findViewById(R.id.btnRecycleView)
+        btnRecycleBuah = findViewById(R.id.btnRecycleBuah)
 
         // untuk 1 screen terdiri dari 1 main activity dan 1 file xml layout
         // untuk widget yang dipakai, harus dideklarasi dahulu
@@ -75,6 +77,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnRecycleView.setOnClickListener() {
             val intentMenu5 = Intent(this@MainActivity, RecycleViewActivity::class.java)
+            startActivity(intentMenu5)
+        }
+        btnRecycleBuah.setOnClickListener() {
+            val intentMenu5 = Intent(this@MainActivity, RecycleBuahActivity::class.java)
             startActivity(intentMenu5)
         }
     }
