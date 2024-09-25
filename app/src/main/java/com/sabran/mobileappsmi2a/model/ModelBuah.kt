@@ -7,7 +7,7 @@ data class ModelBuah(
     val nama : String
 )
 
-object Mocklist{
+object Mocklist {
     fun getModel() : List<ModelBuah>{
         val itemModel1 = ModelBuah(
             R.drawable.apple,

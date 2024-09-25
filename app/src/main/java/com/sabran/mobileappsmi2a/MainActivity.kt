@@ -18,13 +18,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnListView : Button
     private lateinit var btnRecycleView : Button
     private lateinit var btnRecycleBuah : Button
+    private lateinit var btnRecycleMovie : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        btnClick = findViewById(R.id.btnClickHere)
+//        btnClick = findViewById(R.id.btnClickHere)
         btnNextPage = findViewById(R.id.btnNextPage)
         btnLatihan2 = findViewById(R.id.btnLatihan2)
         btnKalkulatorSederhana = findViewById(R.id.btnKalkulatorSederhana)
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         btnListView = findViewById(R.id.btnListView)
         btnRecycleView = findViewById(R.id.btnRecycleView)
         btnRecycleBuah = findViewById(R.id.btnRecycleBuah)
+        btnRecycleMovie = findViewById(R.id.btnRecycleMovie)
 
         // untuk 1 screen terdiri dari 1 main activity dan 1 file xml layout
         // untuk widget yang dipakai, harus dideklarasi dahulu
@@ -43,9 +45,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        btnClick.setOnClickListener() {
-            Toast.makeText(this, "Anda Menekan Tombol", Toast.LENGTH_SHORT).show()
-        }
+//        btnClick.setOnClickListener() {
+//            Toast.makeText(this, "Anda Menekan Tombol", Toast.LENGTH_SHORT).show()
+//        }
 
         btnNextPage.setOnClickListener() {
             // untuk pindah page : intent
@@ -72,16 +74,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentMenu5)
         }
         btnListView.setOnClickListener() {
-            val intentMenu5 = Intent(this@MainActivity, ListViewActivity::class.java)
-            startActivity(intentMenu5)
+            val intentMenu6 = Intent(this@MainActivity, ListViewActivity::class.java)
+            startActivity(intentMenu6)
         }
         btnRecycleView.setOnClickListener() {
-            val intentMenu5 = Intent(this@MainActivity, RecycleViewActivity::class.java)
-            startActivity(intentMenu5)
+            val intentMenu7 = Intent(this@MainActivity, RecycleViewActivity::class.java)
+            startActivity(intentMenu7)
         }
         btnRecycleBuah.setOnClickListener() {
-            val intentMenu5 = Intent(this@MainActivity, RecycleBuahActivity::class.java)
-            startActivity(intentMenu5)
+            val intentMenu8 = Intent(this@MainActivity, RecycleBuahActivity::class.java)
+            startActivity(intentMenu8)
+        }
+        btnRecycleMovie.setOnClickListener() {
+            val intentMenu9 = Intent(this@MainActivity, RecycleMovieActivity::class.java)
+            startActivity(intentMenu9)
         }
     }
 }

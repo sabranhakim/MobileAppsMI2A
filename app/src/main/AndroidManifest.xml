@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MobileAppsMI2A"
         tools:targetApi="31">
         <activity
+            android:name=".DetailMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailBuahActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecycleBuahActivity"
             android:exported="false" />
         <activity
