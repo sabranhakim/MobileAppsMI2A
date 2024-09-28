@@ -41,10 +41,11 @@ class BuahAdapter(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        //set data ke widget
         holder.itemImage.setImageResource(itemList[position].gambar)
         holder.itemNama.setText(itemList[position].nama)
 
-        //kita tambahkan intent
+        //kita tambahkan intent ke detail
         holder.itemView.setOnClickListener{
             //intent
             //context atau this ----> getActivity
@@ -52,7 +53,9 @@ class BuahAdapter(
             //kita put data untuk kita passed ke detail
             intent.putExtra("gambar", itemList[position].gambar)
             intent.putExtra("nama", itemList[position].nama)
-
+            intent.putExtra("lokasi", itemList[position].lokasi)
+            intent.putExtra("deskripsi", itemList[position].deskripsi.toString())
+            //passed ke detail
             getActivity.startActivity(intent)
         }
     }

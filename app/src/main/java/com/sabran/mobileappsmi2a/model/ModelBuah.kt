@@ -1,37 +1,52 @@
 package com.sabran.mobileappsmi2a.model
 
+import android.content.Context
 import com.sabran.mobileappsmi2a.R
 
 data class ModelBuah(
     val gambar : Int,
-    val nama : String
+    val nama : String,
+    val lokasi : String,
+    val deskripsi : String
 )
 
 object Mocklist {
-    fun getModel() : List<ModelBuah>{
+    fun getModel(context: Context) : List<ModelBuah>{
         val itemModel1 = ModelBuah(
             R.drawable.apple,
-            "apple"
+            "apple",
+            "Indonesia",
+            context.getString(R.string.st_apel)
         )
         val itemModel2 = ModelBuah(
             R.drawable.grapes,
-            "Anggur"
+            "Anggur",
+            "Nepal",
+            context.getString(R.string.st_anggur)
         )
         val itemModel3 = ModelBuah(
             R.drawable.orange,
-            "Jeruk"
+            "Jeruk",
+            "Brazil",
+            context.getString(R.string.st_jeruk)
         )
         val itemModel4 = ModelBuah(
             R.drawable.pear,
-            "Pear"
+            "Pear",
+            "Belanda",
+            context.getString(R.string.st_pear)
         )
         val itemModel5 = ModelBuah(
             R.drawable.strawberry,
-            "Strawberry"
+            "Strawberry",
+            "Swedia",
+            context.getString(R.string.st_strawberry)
         )
         val itemModel6 = ModelBuah(
             R.drawable.orange,
-            "Orange"
+            "Orange",
+            "Thailand",
+            context.getString(R.string.st_jeruk)
         )
 
         val itemList: ArrayList<ModelBuah> = ArrayList()

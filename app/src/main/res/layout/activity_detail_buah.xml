@@ -16,6 +16,7 @@
             android:id="@+id/imgDetailBuah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             app:srcCompat="@drawable/apple" />
 
         <TextView
@@ -23,9 +24,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#2196F3"
-            android:text="TextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Apel"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/txtDetailLokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi : Padang"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txtDetailDeskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/st_apel" />
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">MobileAppsMI2A</string>
+    <string name="st_anggur">Anggur merupakan buah yang diolah dari telur buah
+        berupa perdu merambat yang termasuk ke dalam keluarga Vitaceae.
+        Buah ini biasanya digunakan untuk membuat jus anggur, jelly, minuman anggur,
+        minyak biji anggur dan kismis, atau dimakan langsung</string>
+    <string name="st_jeruk">Jeruk (bahasa Inggris: orange) adalah buah dari spesies
+        citrus dalam famili Rutaceae. Istilah "jeruk" umumnya mengacu pada Citrus ×
+        sinensis yang juga disebut jeruk manis dan Citrus aurantium yang disebut
+        jeruk pahit. </string>
+    <string name="st_apel">Apel merupakan jenis buah-buahan, atau buah yang dihasilkan
+        dari pohon apel. Buah apel biasanya berwarna merah kulitnya jika masak dan
+        siap dimakan, tetapi bisa juga kulitnya berwarna hijau atau kuning. </string>
+    <string name="st_pear">Pir adalah buah berbentuk bel dengan perpaduan rasa manis
+        dan masam12. Buah ini berasal dari genus Pyrus dan mempunyai kandungan air
+        yang tinggi34. Ada sekitar 3.000 varietas pir yang dibudidayakan di seluruh
+        dunia2. Tanaman ini berasal dari negara Eropah dan Asia Barat, kemudian dibawa
+        ke Amerika Utara pada abad ke-173.  </string>
+    <string name="st_strawberry">Strawberry adalah jenis buah beri yang biasanya berwarna
+        merah atau merah muda, dengan biji-biji kecil di permukaannya12. Buah ini memiliki
+        rasa manis dan segar, sering ada dalam berbagai hidangan, seperti kue, selai, es krim,
+        dan salad. Strawberry juga kaya akan vitamin C dan serat, sehingga baik untuk kesehatan1.</string>
 </resources>
