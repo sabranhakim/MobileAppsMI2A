@@ -23,7 +23,7 @@ class RecycleMovieActivity : AppCompatActivity() {
 
         rv_movie = findViewById(R.id.rv_movie)
 
-        rv_movie.layoutManager = GridLayoutManager(this, 1)
+        rv_movie.layoutManager = GridLayoutManager(this, 2)
         val adapter = MovieAdapter(Movielist.getModel() as ArrayList<ModelMovie> , this)
         rv_movie.adapter = adapter
 

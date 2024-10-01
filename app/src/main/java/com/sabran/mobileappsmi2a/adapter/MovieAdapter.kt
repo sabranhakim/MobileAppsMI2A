@@ -23,10 +23,12 @@ class MovieAdapter
     class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         var itemImage : ImageView
         var itemNama : TextView
+        var itemSinopsis: TextView
 
         init {
             itemImage = itemView.findViewById(R.id.gambar1) as ImageView
             itemNama = itemView.findViewById(R.id.nama) as TextView
+            itemSinopsis = itemView.findViewById(R.id.txtSinopsis) as TextView
         }
     }
 
@@ -43,6 +45,7 @@ class MovieAdapter
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.itemImage.setImageResource(itemList[position].gambar)
         holder.itemNama.setText(itemList[position].nama)
+        holder.itemSinopsis.setText(itemList[position].sinopsis)
 
         //kita tambahkan intent
         holder.itemView.setOnClickListener{
@@ -52,6 +55,7 @@ class MovieAdapter
             //kita put data untuk kita passed ke detail
             intent.putExtra("gambar", itemList[position].gambar)
             intent.putExtra("nama", itemList[position].nama)
+            intent.putExtra("sinopsis", itemList[position].sinopsis)
 
             getActivity.startActivity(intent)
         }

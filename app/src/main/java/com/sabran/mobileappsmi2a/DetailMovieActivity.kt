@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 class DetailMovieActivity : AppCompatActivity() {
 
     private lateinit var txtDetailMovie : TextView
+    private lateinit var txtSinopsis : TextView
     private lateinit var imgDetailMovie : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,12 +21,15 @@ class DetailMovieActivity : AppCompatActivity() {
 
         txtDetailMovie = findViewById(R.id.txtDetailMovie)
         imgDetailMovie = findViewById(R.id.imgDetailMovie)
+        txtSinopsis = findViewById(R.id.txtSinopsis)
 
         //get data dari intent
         val detailTeks = intent.getStringExtra("nama")
+        val detailsinopsis = intent.getStringExtra("sinopsis")
         val detailImg = intent.getIntExtra("gambar", 0)
 
         //set data ke widget
+        txtSinopsis.setText(detailsinopsis)
         txtDetailMovie.setText(detailTeks)
         imgDetailMovie.setImageResource(detailImg)
 

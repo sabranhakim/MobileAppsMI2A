@@ -25,5 +25,16 @@
         android:textSize="32dp"
         android:textColor="@color/white"
         android:text="Ini Buah" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/txtSinopsis"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:text="Ini Buah" />
 
 </RelativeLayout>
